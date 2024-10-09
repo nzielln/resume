@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("../css/gambarino.css");
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+// VARIABLES
+// FONTS
+$GAMBARINO: 'Gambarino-Regular', serif;
+$SPACE: 'Space Grotesk', sans-serif; // LIGHT - 300, REGULAR - 400, MEDIUM - 500, SEMI - 600, BOLD - 700
+
+$TITLE: 104px $GAMBARINO;
+$SUB_TITLE: 400 20px $SPACE;
+$BODY_LIGHT: 300 18px $SPACE;
+$BODY_REGULAR: 400 18px $SPACE;
+$BODY_BOLD: 700 18px $SPACE;
+$MENU_LIGHT: 300 18px $SPACE;
+$MENU_LIGHT_BOLD: 500 18px $SPACE;
+$MENU_BOLD: 500 22px $SPACE;
+$HEADLINE: 16px $GAMBARINO;
+$HEADLINE_LIGHT: 300 16px $SPACE;
+
+// COLORS
+$BLACK: #1C1A1F;
+$WHITE: #EDEDEF;
+
+// TEXT HIERARCHY
+/** 
+BODY: p
+TITLE: h1
+TITLE: h2
+MENU: h4
+HEADLINE: h3
+*/
+
+html, body {
+    background-color: $BLACK;
+    color: $WHITE;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+.lighten {
+    opacity: 0.75;
+}
+
+.button-normal {
+    font: $MENU_LIGHT;
+}
+
+.button-active {
+    font: $MENU_BOLD;
+}
+
+.link-normal {
+    font: $MENU_LIGHT;
+}
+
+.link-active {
+    font: $MENU_LIGHT_BOLD;
+}
+
+p {
+    font: $BODY_LIGHT;
+}
+
+// HEADER 
+
+.header {
+    background-color: $BLACK;
+    height: 100vh;
+    .header-content {
+        background-color: red;
+        height: 100%;
+    }
+    .header-footer {
+        h1 {
+            font: $TITLE;
+            text-transform: uppercase;
+            line-height: 84px;
+        }
+
+        h4 {
+            font: $SUB_TITLE;
+        }
+
+    }
+
+    .site-menu {
+    }
+}
+
+// BODY
+
+.main-body {
+    .experience-item {
+        .title {
+            hr {
+                width: 50px;
+
+            }
+        }
+        .bottom-content {
+            padding-left: 58px;
+        }
+
+        h2 {
+            font: $BODY_BOLD;
+        }
+
+        h5 {
+            font: $HEADLINE;
+        }
+
+        p {
+            font: $HEADLINE_LIGHT;
+        }
+    }
+     .projects {
+        h5 {
+            font: $HEADLINE;
+        }
+
+    }
+
+}
+
+// FOOTER

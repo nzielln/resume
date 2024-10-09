@@ -8,7 +8,7 @@ const Home = () => {
         in San Francisco, CA.
         <br />
         <br />
-        In 2019, I completed in Bachelor of Science in Biochemistry at
+        In 2019, I completed a Bachelor of Science in Biochemistry at
         Tufts University. However, having had a passion for art and design
         growing up, I would always find myself on the web teaching myself how to
         design and code websits and apps, effectively igniting a love for

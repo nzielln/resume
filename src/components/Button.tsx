@@ -10,7 +10,7 @@ const Button = ({ title, isActive, link, alignment }: ButtonProp) => {
         className={`button-${isActive ? "active" : "normal"}`}
         target="_blank"
         rel={"noopener noreferrer"}>
-        <h4>{title}</h4>
+        <h4 className="mb-2">{title}</h4>
       </a>
     )
 }

@@ -10,6 +10,8 @@ export const MENU_PROJECTS = "Projects"
 
 export const LINKEDIN = "LinkedIn"
 export const LINK_LINKEDIN = "https://www.linkedin.com/in/ellah-nzikoba/"
+export const EMAIL = "Email"
+export const EMAIL_LINK = "hello@ellahnzikoba.com"
 export const RESUME = "Resume"
 export const LINK_RESUME = "/files/resume.pdf"
 export const BOSTON = "Boston"

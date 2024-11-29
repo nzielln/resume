@@ -22,8 +22,8 @@ const Footer = () => {
     }
 
     return (
-      <div className="footer flex justify-end">
-        <div className="footer-links grid grid-cols-2 gap-y-2 gap-x-40 mb-32 mr-16 justify-end">
+      <div className="footer flex justify-between lg:justify-end mt-12 lg:mt-0">
+        <div className="footer-links grid grid-cols-2 gap-y-2 gap-x-40 mb-32 sm:mr-0 lg:mr-16 justify-between lg:justify-end max-lg:w-full items-end lg:items-start">
           <div>
             {city_items.map((item) => {
               return (
@@ -49,7 +49,7 @@ const Footer = () => {
             <a
               className="link-normal mb-2"
               href="mailto:hello@ellahnzikoba.com">
-              {EMAIL}
+              <h4 className="w-full text-right lg:text-left">{EMAIL}</h4>
             </a>
           </div>
         </div>

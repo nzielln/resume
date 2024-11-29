@@ -2,6 +2,14 @@ import { TechnicalSkills } from "@/props/enums"
 import ExperienceItem from "@/components/Experience"
 import { Position } from "@/props/props"
 
+/*
+Mapping of company -> position
+{
+Apple: [],
+Toast: []
+}
+*/
+
 const experiences = [
   {
     company: "Apple",

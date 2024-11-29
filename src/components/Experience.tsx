@@ -1,6 +1,7 @@
 
 import { TechnicalSkills } from "@/props/enums"
 import { ExperienceProp } from "@/props/props"
+import { Position } from "@/props/props"
 
 const ExperienceItem = ({company, positions, skills }: ExperienceProp) => {
 
@@ -19,6 +20,21 @@ const ExperienceItem = ({company, positions, skills }: ExperienceProp) => {
     const skillsAsString = () => {
         return skills.join("  •  ")
     }
+  
+    var currentOrg = ""
+
+  const positionHeader = (position: Position) => {
+    if (position.org == currentOrg) {
+      return null
+    } else {
+      currentOrg = position.org
+      return (
+        <h5 className="position-org underline decoration-solid">
+          {position.org}
+        </h5>
+      )
+    }
+  }
 
     return (
       <div className="experience-item flex flex-col mb-8">
@@ -33,16 +49,17 @@ const ExperienceItem = ({company, positions, skills }: ExperienceProp) => {
                           <div
                             key={index}
                             className="position-date flex w-full justify-between">
-                            <div className="position flex ">
-                              <h5 className="position-title">
-                                {position.title + " "}
-                              </h5>
-                              <h5>&nbsp;&nbsp;-&nbsp;&nbsp;</h5>
-                              <h5 className="position-org underline decoration-solid">{position.org}</h5>
+                            <div className="flex flex-col w-full">
+                              {positionHeader(position)}
+                              <div className="flex w-full justify-between">
+                                <h5 className="position-title">
+                                  {position.title + " "}
+                                </h5>
+                                <p className="date opacity-75">
+                                  {dateAsString(position.start, position.end)}
+                                </p>
+                              </div>
                             </div>
-                            <p className="date opacity-75">
-                              {dateAsString(position.start, position.end)}
-                            </p>
                           </div>
                         )
                     })

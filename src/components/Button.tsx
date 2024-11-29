@@ -7,7 +7,7 @@ const Button = ({ title, isActive, link, alignment }: ButtonProp) => {
     return (
       <a
         href={link.length == 0 ? "" : link}
-        className={`button-${isActive ? "active" : "normal"}`}
+        className={`button-${isActive ? "active" : "normal"} text-right lg:text-left`}
         target="_blank"
         rel={"noopener noreferrer"}>
         <h4 className="mb-2">{title}</h4>

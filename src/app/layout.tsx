@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import Menu from "@/components/Menu";
 import Header from "@/components/Header";
+import MobileHeader from "@/components/MobileHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,9 @@ const RootLayout = ({
               <Menu />
               <Header />
             </div>
+          </div>
+          <div className="small-header col-span-1 lg:hidden inline">
+            <MobileHeader />
           </div>
           <div className="main-body lg:col-span-1 flex flex-col justify-between m-8 lg:m-0">
             {children}

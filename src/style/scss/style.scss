@@ -19,6 +19,7 @@ $MENU_LIGHT: 300 18px $SPACE;
 $MENU_LIGHT_BOLD: 500 18px $SPACE;
 $MENU_BOLD: 500 22px $SPACE;
 $HEADLINE: 16px $GAMBARINO;
+$HEADLINE_LARGE: 24px $GAMBARINO;
 $HEADLINE_LIGHT: 300 16px $SPACE;
 
 // COLORS
@@ -94,6 +95,23 @@ p {
     }
 }
 
+.mobile-header {
+    background-color: $BLACK;
+    .mobile-header-title {
+        h1 {
+            font: $HEADLINE_LARGE;
+            text-transform: uppercase;
+        }
+    }
+    .mobile-header-menu {
+        .mobile-header-icon {
+            width: 20px;
+            height: fit-content;
+        }
+    }
+
+}
+
 // BODY
 
 .main-body {
@@ -127,11 +145,6 @@ p {
         }
 
     }
-
-    .footer {
-        background-color: red;
-    }
-
 }
 
 // FOOTER

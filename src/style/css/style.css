@@ -60,6 +60,18 @@ p {
 .header .header-footer h4, .header-header .header-footer h4 {
   font: 400 20px "Space Grotesk", sans-serif;
 }
+.mobile-header {
+  background-color: #1C1A1F;
+}
+.mobile-header .mobile-header-title h1 {
+  font: 24px "Gambarino-Regular", serif;
+  text-transform: uppercase;
+}
+.mobile-header .mobile-header-menu .mobile-header-icon {
+  width: 20px;
+  height: fit-content;
+}
+
 .main-body {
   height: 100vh;
 }
@@ -80,9 +92,6 @@ p {
 }
 .main-body .projects h5 {
   font: 16px "Gambarino-Regular", serif;
-}
-.main-body .footer {
-  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

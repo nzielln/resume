@@ -70,7 +70,7 @@ p {
 
 // HEADER 
 
-.header {
+.header, .header-header {
     background-color: $BLACK;
     height: 100vh;
     .header-content {
@@ -97,6 +97,7 @@ p {
 // BODY
 
 .main-body {
+    height: 100vh;
     .experience-item {
         .title {
             hr {
@@ -125,6 +126,10 @@ p {
             font: $HEADLINE;
         }
 
+    }
+
+    .footer {
+        background-color: red;
     }
 
 }

@@ -20,12 +20,14 @@ const RootLayout = ({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="site-content grid grid-cols-2">
-          <div className="header col-span-1 flex flex-col justify-between">
-            <Menu />
-            <Header />
+        <div className="site-content lg:grid lg:grid-cols-2">
+          <div className="header col-span-1 hidden lg:inline">
+            <div className="header-header w-screen flex flex-col justify-between">
+              <Menu />
+              <Header />
+            </div>
           </div>
-          <div className="main-body col-span-1 flex flex-col justify-between">
+          <div className="main-body lg:col-span-1 flex flex-col justify-between m-8 lg:m-0">
             {children}
             <Footer />
           </div>

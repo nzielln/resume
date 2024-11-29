@@ -44,21 +44,24 @@ p {
   font: 300 18px "Space Grotesk", sans-serif;
 }
 
-.header {
+.header, .header-header {
   background-color: #1C1A1F;
   height: 100vh;
 }
-.header .header-content {
+.header .header-content, .header-header .header-content {
   background-color: red;
   height: 100%;
 }
-.header .header-footer h1 {
+.header .header-footer h1, .header-header .header-footer h1 {
   font: 104px "Gambarino-Regular", serif;
   text-transform: uppercase;
   line-height: 84px;
 }
-.header .header-footer h4 {
+.header .header-footer h4, .header-header .header-footer h4 {
   font: 400 20px "Space Grotesk", sans-serif;
+}
+.main-body {
+  height: 100vh;
 }
 .main-body .experience-item .title hr {
   width: 50px;
@@ -77,6 +80,9 @@ p {
 }
 .main-body .projects h5 {
   font: 16px "Gambarino-Regular", serif;
+}
+.main-body .footer {
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

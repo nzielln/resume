@@ -6,7 +6,7 @@ const experiences = [
   {
     company: "Apple",
     positions: [
-        new Position("Software Engineer", "Home App", new Date("January 2023"))
+        new Position("Software Engineer", "Home App", new Date("January 2024"))
     ],
     skills: [
         TechnicalSkills.IOS_DEVELOPMENT,
@@ -20,7 +20,7 @@ const experiences = [
     company: "Toast",
       positions: [
         new Position("Software Engineer II", "Toast Takeout", new Date("July 2023"), new Date("January 2024")),
-        new Position("Software Engineer Co-op", "Toast Takeout", new Date("January 2023"), new Date("July 2024"))
+        new Position("Software Engineer Co-op", "Toast Takeout", new Date("January 2023"), new Date("July 2023"))
     ],
     skills: [
         TechnicalSkills.IOS_DEVELOPMENT,
